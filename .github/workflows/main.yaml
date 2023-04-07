@@ -37,4 +37,5 @@ jobs:
             docker run -d \
             -p 80:80 \
             --name frontend_labs \
+            --network devopslabs \
             ${{ secrets.DOCKER_USERNAME }}/frontend_labs:${{ github.run_number }}
